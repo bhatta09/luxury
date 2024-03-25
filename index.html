@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild World Tours</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const destinationSelect = document.getElementById('destinations');
+            destinationSelect.addEventListener('change', function() {
+                if (this.value !== '') {
+                    this.querySelector('option[value=""]').remove();
+                }
+            });
+
+            const departureSelect = document.getElementById('departure');
+            departureSelect.addEventListener('change', function() {
+                if (this.value !== '') {
+                    this.querySelector('option[value=""]').remove();
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <div class="left1">
+          <img src="img/images.png" alt="Logo">
+          <label>World Tours</label>
+        </div>
+        <div id="right1">
+            <a href="destinations.html">DESTINATIONS</a>
+              <a href="offers.html">OFFERS</a>
+              <a href="private tours.html">PRIVATETOURS</a>
+              <a href="info.html">INFO</a>
+              <a href="contact.html">CONTACT</a>
+         <div id="right-b">
+          <button class="login">Login</button>
+            <button class="search">&#128269;</button>
+    
+         </div>
+        </div>
+              </nav>
+              <!-- Nav end -->
+
+              <!-- background start-->
+    <section>
+        <div class="background-img">
+         <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fbclid=IwAR2xVXVHjvFjQT9FKqX93g6p2sSC--9vRc7u-ZvNBBeoqqpv-6UvQT2HNow" alt="">
+     <h1 class="s1">
+      Classic Spain &amp; Portugal
+      </h1>
+
+      <div class="infobox">
+        <div class="infoboxone">
+            <span>Prices Starting From </span><span class="Mirador">$2800</span>
+        </div>
+        <div class="infoboxtwo">
+            <span class="Mirador">12 Days 10 Nights</span>
+        </div>
+        <div class="infoboxthree">
+            <span>Tour Code: </span><span class="Mirador">RSP</span>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+     </section> 
+<!--background end-->
+
+<!--search trip-->
+<div class="search-my-trip">
+    <div class="search-box">
+        <div><h1>Search my trip</h1></div>
+        <div>
+            <select id="destinations" name="destinations">
+                <option value="" disabled selected>Search Destination</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+            </select>
+        </div>
+        <div>
+            <select id="departure" name="departure">
+                <option value="" disabled selected>Search Departure Date</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <button>Find my trip</button>
+        </div>
+    </div>
+</div>
+<!--search trip end-->
+
+   <!--Contact Us-->
+ <section class="">
+    <div class="ot">
+        <div class="in">
+            <div class="cs">
+                <div class="cs_left">
+                    <p>Contact Us</p>
+                    <p>Questions? Call us or your travel advisor.</p>
+                </div>
+                <div class="cs_right">
+                    <div class="cs_right_phonenum">
+                        <img src="/asset/img/ritzimg/phone-icon-white.svg">
+                        <p>+977 9800000000</p>
+                    </div>
+                    <a href="/Home/ContactUs">
+                        <div class="cs_right_btn">
+                            <span>Send An Inquiry</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact us end-->
+
+<!-- dream text-->
+<div class="ot">
+    <div class="in">
+<div class="dt">
+    <div class="dt-name">
+        <span class="dtsm">Find your <br>dream vacation in...</span><br>
+    </div>
+    <div class="dt-info">
+        <p>
+            We bring everywhere alive with tours that cover and look beyond the highlights: revealing hidden gems and offering cultural encounters that build into multi-faceted and compelling travel experiences.
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--dream text end-->
+
+<!--tour-->
+<section id="travel" class="travel">
+   <div class="container">
+ <div class="travel-gallery scroll-scale">
+            <div class="port-box mix product">
+                <div class="port-image">
+                    <img src="img/11.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h1>Asia</h1>
+                    
+                </div>   
+            </div>
+
+            <div class="port-box mix product">
+                <div class="port-image">
+                    <img src="img/2.webp" alt="">
+                </div>
+                <div class="port-content">
+                    <h1>Europe</h1>
+                </div>   
+            </div>
+
+            <div class="port-box mix inter">
+                <div class="port-image">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h1>Dubai & India</h1>
+                </div>   
+            </div>
+
+            <div class="port-box mix inter">
+                <div class="port-image">
+                    <img src="img/5.webp" alt="">
+                </div>
+                <div class="port-content">
+                    <h1>Africa & MiddleEast</h1>
+                </div>   
+            </div>
+
+            <div class="port-box mix inter">
+                <div class="port-image">
+                    <img src="img/6" alt="">
+                </div>
+                <div class="port-content">
+                    <h1>China</h1>
+                </div>   
+            </div>
+
+            <div class="port-box mix web">
+                <div class="port-image">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h1>South America</h1>
+                </div>   
+            </div>
+            </div>
+    </div>
+</section>
+
+
+<section id="travel" class="travel">
+    <div class="ot">
+    <div class="dt-name">
+        <span class="dtsm">Our most <br>Popular Tours</span><br>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="travel-gallery scroll-scale">
+         <div class="port-box mix product">
+                <div class="port-image">
+                    <img src="img/16.webp" alt="">
+                </div>
+                <div class="port-content1">
+                    <h3>Annapurna Base Camp with Ghorepani Poon Hill Trek</h3>
+                    <div class="pc">
+                    <p>8 days/7 night</p>
+                       <p>From $2799</p>
+                    </div>
+                    <p>From dream-like lakes to a distinctive culture based on age-old traditions and etiquette,it's no surprise that Annapurna  camp is a source
+                    </p>
+                    <div class="pc1">
+                    <a href="">View Tour</a>
+                    <img src="img/556_arrowright.jpg" style="width:15px; height:15px;" />
+                    </div>
+                </div>   
+            </div>
+
+
+           
+
+           
+           
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--tour end-->
+
+<!--clt-->
+<section class="clt">
+    <div class="clt-bg" style="background-image: url(https://images.unsplash.com/photo-1616265535374-f39fb333a6e6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+        <img src="https://images.unsplash.com/photo-1616265535374-f39fb333a6e6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=" ">
+    </div>
+    <div class="clt__content">
+        <div>
+            <h1>Get in contact today to start<br>building your perfect tour. </h1>
+            <div class="cltbtn">
+                <a href="/Home/ContactUs" style="text-decoration: none;"><button >contact us</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--clt end-->
+
+<!--footer-->
+<section id="footer">
+    <div id="footer-1">
+        <div class="footer-11">
+            <h1>Join our mailing list</h1>
+            <h4>For all the latest news and promotions</h4>
+            <button>SUBSCRIBE</button>
+        </div>
+        <div class="footer-11">
+            <h1>Let's keep in touch</h1>
+            <h4>Follow us on:</h4>
+            <button>SUBSCRIBE</button>
+        </div>
+    
+    </div>
+    <div id="footer-2">
+        <div class="footer-22">
+            <h4>Destinations<br>
+                Offers<br>
+                Private Tours</h4>
+        </div>
+        <div class="footer-22">
+            <h4>Information
+
+
+            </h4>
+        </div>
+        <div class="footer-22">
+            <h4>About Us
+
+            </h4>
+        </div>
+        <div class="footer-22">
+            <h4>Customer Service
+
+            </h4>
+        </div>
+        <div class="footer-22"></div>
+        <div class="footer-22">
+            <h4>LOGO
+
+            </h4>
+        </div>
+    
+    </div>
+    
+</section>
+<!--footer end-->
+<div class="image-container">
+    <div class="static-text">
+        <p>Static text in front</p>
+    </div>
+    <div class="image-text">
+        <p>Text on hover</p>
+    </div>
+    <img src="img/15.avif" alt="Your Image">
+</div>
+</body>
+</html>
